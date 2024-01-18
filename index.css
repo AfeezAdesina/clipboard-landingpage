@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+/* CSS Reset */
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set box-sizing to border-box for all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Set default font family and size */
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+html {
+    font-size: 10px;
+}
+
+/* Reset list styles */
+ol,
+ul {
+    list-style: none;
+}
+
+/* Reset anchor styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Reset button styles */
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+:root {
+    --StrongCyan: hsl(171, 66%, 44%);
+    --LightBlue: hsl(233, 100%, 69%);
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(202, 11%, 66%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--DarkGrayishBlue);
+    font-size: 2rem;
+}
+
+p,
+blockquote,
+a {
+    color: var(--GrayishBlue);
+    font-size: 1.1rem;
+}
+
+/*//////////////////////////////////////////////*/
+/* **************HEADER SECTION********** */
+/*//////////////////////////////////////////////*/
+
+.header {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.404), rgb(255, 255, 255)),
+        url(./images/bg-header-desktop.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 50px;
+
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+.header img {
+    width: 50px;
+}
+
+.clipboard {
+    white-space: pre-line;
+    text-align: center;
+    line-height: 1.7;
+    word-spacing: 2px;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.btn {
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 8px 20px;
+    border-radius: 20px;
+
+
+}
+
+.btn1 {
+    background-color: var(--StrongCyan);
+    box-shadow: 0px 2px 0px #26baa492;
+}
+
+.btn2 {
+    background-color: var(--LightBlue);
+    box-shadow: 0px 2px 0px #6173ff92;
+}
+
+.btn1:hover {
+    background-color: #26baa492;
+}
+
+.btn2:hover {
+    background-color: #6173ff92;
+}
+
+/*//////////////////////////////////////////////*/
+/* ***********COMPUTER SECTION********** */
+/*//////////////////////////////////////////////*/
+.computer-sec {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.computer {
+    width: 100%;
+}
+
+.computer-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 100px 200px 100px 100px;
+}
+
+.computer-text p {
+    line-height: 2;
+    font-size: 12px;
+}
+
+/*//////////////////////////////////////////////*/
+/* ***********ACCESS SECTION********** */
+/*//////////////////////////////////////////////*/
+.access h3 {
+    text-align: center;
+}
+
+.access {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-devices {
+    margin-top: 50px;
+    width: 75%;
+}
+
+/*//////////////////////////////////////////////*/
+/* ***********FIGURE SECTION********** */
+/*//////////////////////////////////////////////*/
+.figure-sec {
+    display: flex;
+    margin: 50px auto;
+    width: 1000px;
+    justify-content: space-around;
+}
+
+.figure-sec img {
+    width: 24px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin: 0;
+    max-width: 350px;
+}
+
+figure blockquote {
+    text-align: center;
+    line-height: 1.7;
+}
+
+/*//////////////////////////////////////////////*/
+/* ***********LOGO SECTION********** */
+/*//////////////////////////////////////////////*/
+.logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px auto;
+}
+
+.logoo {
+    width: 100px;
+}
+
+.ios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-avail {
+    margin-top: 30px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #9fabb234;
+    padding: 2rem 8rem;
+    gap: 10rem;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 40px;
+
+}
+
+.footer-logos img {
+    width: 1.6rem
+}
+
+.footer-logos {
+    gap: 1rem;
+    display: flex;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 5rem;
+    row-gap: 1rem;
+}
+
+.li:hover {
+    color: var(--StrongCyan);
+}
+
+.footer-first {
+    display: flex;
+    gap: 15rem;
+
+}
+
+@media screen and (max-width:576px) {
+    body {
+        width: 375px;
+        margin: 0 auto;
+    }
+
+    .header {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgb(255, 255, 255)),
+            url(./images/bg-header-mobile.png);
+
+    }
+
+    .header img {
+        width: 90px;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        text-align: center;
+        white-space: pre-line;
+        margin-top: 5rem;
+    }
+
+    .clipboard {
+        white-space: normal;
+        font-size: 1.1rem;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 15px 110px;
+    }
+
+    .keep-track {
+        white-space: pre-line;
+        text-align: center;
+    }
+
+    .clipboard2 {
+        padding: 0px 30px;
+        text-align: center;
+    }
+
+    .computer-sec {
+        flex-direction: column;
+        padding: 0px 30px;
+    }
+
+    .computer {
+        width: 100%;
+    }
+
+    .computer-text {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .computer-text p {
+        font-size: 1.5rem;
+    }
+
+    .access {
+        padding: 0px 20px;
+    }
+
+    .access h3 {
+        white-space: pre-line;
+    }
+
+    .access img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .access h3 {
+        white-space: pre-line;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+
+    .tools {
+        white-space: pre-line;
+        text-align: center;
+        line-height: 1.3;
+        font-size: 1.3rem;
+    }
+
+    .figure-sec {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .figure-sec img {
+        width: 32px;
+        margin-bottom: 20px;
+    }
+
+    figure {
+        margin-bottom: 20px;
+    }
+
+    figure blockquote {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    h2,
+    h3,
+    h4 {
+        font-size: 2.2rem;
+    }
+
+    .logos {
+        flex-direction: column;
+        gap: 50px
+    }
+
+    .ios h3 {
+        white-space: pre-line;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .clipboard {
+        font-size: 1.5rem;
+        padding: 0px 30px;
+        margin-top: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px
+    }
+
+    .li {
+        font-size: 1.2rem;
+    }
+
+    .footer-first {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .footer-logos {
+        gap: 3.2rem;
+    }
+}
