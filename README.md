@@ -25,8 +25,8 @@ clipboard-landingpage component challenge on Frontend Mentor
 
 ### Links
 
-- Solution URL:[ Frontendmentor.io](https://www.frontendmentor.io/solutions/huddle-landing-page-FWNVHleseT)
-- Live Site URL:[Blog Preview](https://huddle-landingpage-nu.vercel.app/)
+- Solution URL:[ Frontendmentor.io](https://www.frontendmentor.io/solutions/clipboard-landing-page-IflBm0EAKQ)
+- Live Site URL:[clipboard Preview](https://clipboard-landingpage-tau.vercel.app/)
 
 ## My process
 
